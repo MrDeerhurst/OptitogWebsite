@@ -1,0 +1,132 @@
+/*---------------------------------------*/
+/*BASIC SETUP*/
+/*---------------------------------------*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html
+{
+    background-color: #fff;
+    color: #8d8888;
+    font-family: 'Lato','Arial',sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+/*---------------------------------------*/
+/*REUSABLE SETUP*/
+/*---------------------------------------*/
+.row
+{
+    max-width: 1140px;
+    margin:0 auto;
+}
+
+
+/*-------------------HEADINGS------------------------------*/
+h1{
+    margin:0;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 240%;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+}
+/*-------------------BUTTONS------------------------------*/
+.btn:link,
+.btn:visited{
+    display: inline-block;
+    padding: 10px 30px; /*að ofan og vinsti og hægri*/
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    color:#fff;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}/*backround color changes within 0.2 parts of a second*/
+
+.btn-full:link,
+.btn-full:visited
+{
+    background-color: #3498db;
+    border: 1px solid #3498db;
+    color:#fff;
+    margin-right: 15px;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited{
+    border: 1px solid #3498db;
+    color:#3498db;
+}
+
+.btn:hover,
+.btn:active{
+background-color: #2487c9;
+}
+
+.btn-full:hover,
+.btn-full:active
+{
+    border: 1px solid #2487c9;
+    background-color: #2487c9;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active{
+    border: 1px solid #2487c9;
+    color: #fff;
+}
+/*---------------------------------------*/
+/*HEADER*/
+/*---------------------------------------*/
+header
+    {
+    background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/alda.jpg) ;
+    height: 100vh; /* hluturinn er 100% af sidu */
+    background-size: cover;
+    background-position: center;
+    height: 100hv;  
+    }
+.text-box{
+    position: absolute;
+    width: 1140px;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.logo{
+    height: 100px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+}
+.main-nav {
+    float: right;
+    list-style:none;
+    
+}
+    .T1 { /* All the units for main-nav */
+        display: inline-block;
+        margin: 40px;
+        margin-top: 40px;
+    }
+    .T2:link,
+    .T2:visited{
+        padding: 5px 0;
+        color:#fff;
+        text-decoration: none;
+        text-transform:uppercase;
+        font-size: 60%;
+        border-bottom: 2px solid transparent;
+        transition: border-bottom 0.2s;
+    }
+    .T2:hover,
+    .T2:active{
+        border-bottom: 2px solid #2487c9;
+    }
+
+
